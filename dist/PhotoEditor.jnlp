@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="PhotoEditor.jnlp">
+  <information>
+    <title>PhotoEditor</title>
+    <vendor>Aluno</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Djava.library.path=bibliotecas "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="PhotoEditor.jar" size="13838" download="eager" />
+    <jar href="lib\opencv-249.jar" size="447830" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="PhotoEditor" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="photoeditor.PhotoEditor"  name="PhotoEditor" />
+  <update check="always"/>
+</jnlp>
